@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#a{
+    background-color: rgb(65, 65, 155);
+    height: 60px;
+    width: 100%;
+}
+ 
+#a1{
+    display: flex;
+    justify-content: space-evenly;  
+    font-size: larger; 
+    position: relative;
+    color: beige;
+    right: 10%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#img1{
+    height: 38px;
+    position: relative;
+    left:300%;
+    top: 10px;
+   
+}
+#za{
+    position: relative;
+    top: 5px;  
+    left: 5%;
+  font-size: 40px;
+  color: orange;
+  font-family:cursive;
+    
+
+}
+#aa{
+  position: relative;
+  top: 20px;  
+  left: 30%;
+}
+#ab{
+    position: relative;
+    top: 20px;
+    left: 27%;  
+}
+#ac{
+    position: relative;
+    top: 20px;  
+    left: 24%;
+
+}
+#ad{
+    position: relative;
+    top: 20px;
+    left: 21%;
+  
+}
+#ae{
+    position: relative;
+    top: 20px;
+    left: 18%;
+}
+#af{
+    position: relative;
+    top: 20px; 
+   left: 15%;
+ 
+}
+#ag{
+    position: relative;
+    top: 10px;
+    left: 154px;
+    width: 110%;
+    height: 40px;
+    background-color: orange;
+    font-size: 15px;
+    border-radius: 10px;
+   color: beige;
+}
+#aa:hover{
+    color: orange;
+}
+#ab:hover{
+    color: orange;
+}
+#ac:hover{
+    color: orange;
+}
+#ad:hover{
+    color: orange;
+}
+#ae:hover{
+    color: orange;
+}
+#af:hover{
+    color: orange;
+}
+#b{
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/26/12/49/red-wine-2443699_1280.jpg");
+    width:100%;
+    height: 100vh;
+    filter: opacity(0.);
+   
+}  
+#b1{
+    position: relative;
+    top: 15%;
+    left: 80px;
+    font-style: italic;
+    font-size: 60px;
+    color:orange;
+    font-family:  cursive;
+} 
+#b2{
+    position: relative;
+    top: 23%;
+    left: 80px;
+    font-style: italic;
+    font-size: 25px;
+    color:white;
+}
+#b3{
+    position: relative;
+    top: 30%;
+    left: 80px;
+    height: 50px;
+    width: 13%;
+    color:beige;
+   
+    background-color: orange;
+}
+#b4{
+    height: 450px;
+    width: 450px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/14/21/40/irish-845385_1280.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+    bottom: 45%;
+    left: 60%;
+    
+    animation: rotation 50s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(400deg);
+    }
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="a">
+            <ol id="a1">
+                <div>
+                    <img id="img1" src="https://cdn.pixabay.com/photo/2016/08/12/11/14/chefs-hat-1588125_1280.png"
+                        alt="">
+                </div>
+                <l1 id="za"><b>Restron</b></l1>
+                <l1 id="aa">HOME</l1>
+                <l1 id="ab">ABOUT</l1>
+                <l1 id="ac">SERVICE</l1>
+                <l1 id="ad">MENU</l1>
+                <l1 id="ae">PAGES</l1>
+                <l1 id="af">CONTACT</l1>
+                <l1><button id="ag" type="button">BOOK A TABLE</button></l1>
+            </ol>
+        </nav>
+        
+    </header>
+    <div>
+        <div id="b">
+            <div id="b1"><b>Enjoy Our <br> Delicious Meal</b></div>
+            <p id="b2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. <br> Aliqu diam amet diam et eos. Clita erat
+                ipsum et lorem et sit, <br> sed stet lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <button id="b3" type="button"><b>BOOK A TABLE</b></button>
+            <div id="b4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
