@@ -1,198 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <style>*{
+        margin: 0;
+    }
+    
+    nav{
+        height: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        background-color: #2874f0;
+        list-style: none;
+    }
+    
+    nav #flip{
+        position: relative;
+        left: 150px;
+        top: 5px;
+    }
+    
+    nav input{
+        position: relative;
+        top: 6.5px;
+        left: 10px;
         
-*{
-    margin: 0px;
-    padding: 0px;
-    
-}
-#a{
-    background-color: rgb(65, 65, 155);
-    height: 60px;
-    width: 100%;
-}
- 
-#a1{
-    display: flex;
-    justify-content: space-evenly;  
-    font-size: larger; 
-    position: relative;
-    color: beige;
-    right: 10%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#img1{
-    height: 38px;
-    position: relative;
-    left:300%;
-    top: 10px;
-   
-}
-#za{
-    position: relative;
-    top: 5px;  
-    left: 5%;
-  font-size: 40px;
-  color: orange;
-  font-family:cursive;
-    
-
-}
-#aa{
-  position: relative;
-  top: 20px;  
-  left: 30%;
-}
-#ab{
-    position: relative;
-    top: 20px;
-    left: 27%;  
-}
-#ac{
-    position: relative;
-    top: 20px;  
-    left: 24%;
-
-}
-#ad{
-    position: relative;
-    top: 20px;
-    left: 21%;
-  
-}
-#ae{
-    position: relative;
-    top: 20px;
-    left: 18%;
-}
-#af{
-    position: relative;
-    top: 20px; 
-   left: 15%;
- 
-}
-#ag{
-    position: relative;
-    top: 10px;
-    left: 154px;
-    width: 110%;
-    height: 40px;
-    background-color: orange;
-    font-size: 15px;
-    border-radius: 10px;
-   color: beige;
-}
-#aa:hover{
-    color: orange;
-}
-#ab:hover{
-    color: orange;
-}
-#ac:hover{
-    color: orange;
-}
-#ad:hover{
-    color: orange;
-}
-#ae:hover{
-    color: orange;
-}
-#af:hover{
-    color: orange;
-}
-#b{
-    background-image: url("https://cdn.pixabay.com/photo/2017/06/26/12/49/red-wine-2443699_1280.jpg");
-    width:100%;
-    height: 100vh;
-    filter: opacity(0.);
-   
-}  
-#b1{
-    position: relative;
-    top: 15%;
-    left: 80px;
-    font-style: italic;
-    font-size: 60px;
-    color:orange;
-    font-family:  cursive;
-} 
-#b2{
-    position: relative;
-    top: 23%;
-    left: 80px;
-    font-style: italic;
-    font-size: 25px;
-    color:white;
-}
-#b3{
-    position: relative;
-    top: 30%;
-    left: 80px;
-    height: 50px;
-    width: 13%;
-    color:beige;
-   
-    background-color: orange;
-}
-#b4{
-    height: 450px;
-    width: 450px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/07/14/21/40/irish-845385_1280.jpg");
-    background-size: cover;
-    border-radius: 100%;
-    position: relative;
-    bottom: 45%;
-    left: 60%;
-    
-    animation: rotation 50s infinite linear;
-}
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
+        height: 20px;
+        width: 300px;
     }
-    to {
-      transform: rotate(400deg);
+    
+    nav button{
+        height: 20px;
+        width: 70px;
+        position: relative;
+        top: 8.5px;
+        right: 150px;
     }
-  }
-    </style>
+    
+    nav .demo{
+        position: relative;
+        top: 10px;
+    }
+    
+    nav svg{
+        position: absolute;
+        top: 10px;
+    }</style>
 </head>
-
 <body>
     <header>
-        <nav id="a">
-            <ol id="a1">
-                <div>
-                    <img id="img1" src="https://cdn.pixabay.com/photo/2016/08/12/11/14/chefs-hat-1588125_1280.png"
-                        alt="">
-                </div>
-                <l1 id="za"><b>Restron</b></l1>
-                <l1 id="aa">HOME</l1>
-                <l1 id="ab">ABOUT</l1>
-                <l1 id="ac">SERVICE</l1>
-                <l1 id="ad">MENU</l1>
-                <l1 id="ae">PAGES</l1>
-                <l1 id="af">CONTACT</l1>
-                <l1><button id="ag" type="button">BOOK A TABLE</button></l1>
-            </ol>
+        <nav>
+            <li id="flip"><i>Flipkart</i></li>
+            <li><i style="position: relative;top: 15px;left: 20px;font-size: 10px;">
+            Explore <i style="color: yellow;">plus</i></i></li>
+            <input type="text" style="width: 450px;" placeholder="Search for products,brands and more">
+            <svg style="position: relative;right:120px" width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="_34RNph" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_34RNph" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+            <button>Login</button>
+            <li class="demo">Become a Seller</li>
+            <li class="demo">More</li>
+            <li class="demo">Cart</li>
         </nav>
-        
     </header>
-    <div>
-        <div id="b">
-            <div id="b1"><b>Enjoy Our <br> Delicious Meal</b></div>
-            <p id="b2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. <br> Aliqu diam amet diam et eos. Clita erat
-                ipsum et lorem et sit, <br> sed stet lorem sit clita duo justo magna dolore erat amet
-            </p>
-            <button id="b3" type="button"><b>BOOK A TABLE</b></button>
-            <div id="b4"></div>
-        </div>
-    </div>
 </body>
-
 </html>
